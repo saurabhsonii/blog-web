@@ -1,6 +1,6 @@
-# Simple Blog Application
+# Blog Application
 
-This is a simple blog application where users can write, edit, and delete blog posts. Users can also leave comments on blog posts. The application includes user authentication to allow users to log in and manage their own posts.
+This is a blog application where users can write, edit, and delete blog posts. Users can also leave comments on blog posts. The application includes user authentication to allow users to log in and manage their own posts.
 
 ## Features
 
@@ -11,7 +11,7 @@ This is a simple blog application where users can write, edit, and delete blog p
 
 ## Requirements
 
-- Python 3.x (if using Flask or Django)
+- Python 3.x (if using Django)
 - Required packages (specified in `requirements.txt` if available)
 
 ## Installation
