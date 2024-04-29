@@ -39,4 +39,4 @@ This is a simple blog application where users can write, edit, and delete blog p
   
 5. Install dependencies:
 
-  ## pip install -r requirements.txt
+  pip install -r requirements.txt
