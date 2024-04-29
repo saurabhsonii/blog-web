@@ -31,12 +31,12 @@ This is a simple blog application where users can write, edit, and delete blog p
   
 4. Activate the virtual environment:
   
-  ## On Windows:
-  venv\Scripts\activate
+  # On Windows:
+     venv\Scripts\activate
   
-  ## On macOS/Linux:
-  source venv/bin/activate
+   # On macOS/Linux:
+     source venv/bin/activate
   
 5. Install dependencies:
 
-  pip install -r requirements.txt
+     pip install -r requirements.txt
