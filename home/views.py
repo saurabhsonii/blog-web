@@ -10,3 +10,6 @@ def about(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def blog_post(request):
+    return render(request, "single-post.html")
