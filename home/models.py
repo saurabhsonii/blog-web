@@ -4,6 +4,7 @@ from autoslug import AutoSlugField
 
 def custom_slugify(value):
     return value.replace(' ', '-')
+
 class Category(models.Model):
     category_name = models.CharField(max_length=100,null=True)
     slug = AutoSlugField(populate_from=category_name, editable=True, slugify=custom_slugify)
@@ -23,3 +24,11 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title
+
+class Contact(models.Model):
+    name = models.CharField(max_length=100,null=True)
+    email = models.EmailField(null=True)
+    message = models.TextField(null=True)
+
+    def __str__(self):
+        return self.name
