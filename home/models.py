@@ -28,6 +28,7 @@ class Blog(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=100,null=True)
     email = models.EmailField(null=True)
+    subject = models.CharField(max_length=100,null=True)
     message = models.TextField(null=True)
 
     def __str__(self):
