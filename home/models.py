@@ -5,6 +5,8 @@ from autoslug import AutoSlugField
 def custom_slugify(value):
     return value.replace(' ', '-')
 
+# class User(models.Model):
+#     user = models
 class Category(models.Model):
     category_name = models.CharField(max_length=100,null=True)
     slug = AutoSlugField(populate_from=category_name, editable=True, slugify=custom_slugify)
@@ -33,3 +35,9 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+class Commnets(models.Model):
+    message = models.TextField(null=True)
+
+    def __str__(self):
+        return self.message
