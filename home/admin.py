@@ -9,3 +9,6 @@ class BlogAdmin(SummernoteModelAdmin):
 
 admin.site.register(Blog,BlogAdmin)
 admin.site.register(Category)
+admin.site.register(Subscribe)
+admin.site.register(Contact)
+admin.site.register(comments)

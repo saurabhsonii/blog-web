@@ -36,13 +36,13 @@ class Contact(models.Model):
     def __str__(self):
         return self.name
 
-class Commnets(models.Model):
+class Comments(models.Model):
     message = models.TextField(null=True)
 
     def __str__(self):
         return self.message
 
-class Subcribe(models.Model):
+class Subscribe(models.Model):
     subscribe_mail = models.EmailField(null=True)
 
     def __str__(self):
