@@ -41,3 +41,9 @@ class Commnets(models.Model):
 
     def __str__(self):
         return self.message
+
+class Subcribe(models.Model):
+    subscribe_mail = models.EmailField(null=True)
+
+    def __str__(self):
+        return self.subscribe_mail
