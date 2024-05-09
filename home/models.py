@@ -79,7 +79,7 @@ class Post(models.Model):
     """
     title = models.CharField(max_length=200)
     slug = AutoSlugField(populate_from=title, unique=True,slugify=custom_slugify)  # URL-friendly slug derived from title
-    content = models.TextField()
+    content = models.TextField(null=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')  # Foreign key to User model
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True,
                                  related_name='posts')  # Foreign key to Category model
