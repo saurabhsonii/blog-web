@@ -22,5 +22,6 @@ urlpatterns = [
     path('',home,name="home"),
     path('about',about,name='about'),
     path('contact',contact,name='contact'),
-    path('single-post',blog_post,name="single-post")
+    path('single-post',blog_post,name="single-post"),
+    path('user-register',UserRegister,name="user-register")
 ]

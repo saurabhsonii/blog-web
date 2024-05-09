@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .form import *
 # Create your views here.
 
 def home(request):
@@ -13,3 +13,18 @@ def contact(request):
 
 def blog_post(request):
     return render(request, "single-post.html")
+
+
+def UserRegister(request):
+    if request.method == 'POST':
+        form = UserForm(request.POST)
+        if form.is_valid():
+            # Process the data
+            data = form.cleaned_data
+            # Perform operations with data...
+            # Redirect or render a success template
+            return render(request, 'success.html')
+    else:
+        form = UserForm()
+
+    return render(request, 'user_form.html', {'form': form})
